@@ -14,8 +14,9 @@ const Home = () => {
             {/* <Header/> */}
             <SliderHeader/>
              <CustomTools/>
+              <Membership/>
             <Opportunities/>
-            <Membership/>
+           
           
            
             <FAQ/>

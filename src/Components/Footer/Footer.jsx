@@ -27,7 +27,7 @@ const Footer = () => {
                             <a href="https://www.instagram.com/bulkalliance/">
                                 <InlineIcon icon="la:instagram" />{" "}
                             </a>
-                            <a href="bulkalliance1@gmail.com">
+                            <a href="mailto:bulkalliance1@gmail.com">
                                 <InlineIcon icon="fontisto:email" />
                             </a>
                         </div>
@@ -38,16 +38,16 @@ const Footer = () => {
             <div className="container  pb-4">
                 <div className="row row-cols-1 row-cols-lg-2 justify-content-between">
                     <div className="copyright">
-                        &copy; Developed my{" "}
+                      Bulk Alliance &copy; 2021 All rights reserved.  Developed By{" "}
                         <a className="text-blue-grey ms-2" href="http://wakestart.com">
                             Wakestart LTD
                         </a>
                     </div>
                     <div className="copyright-links d-flex justify-content-end">
                         <a href="#faq">FAQ</a>
-                        <a to="">Contact</a>
+                      
                         <a href="#custom-tools">about</a>
-                        <Link to="/">Terms and Condition</Link>
+                       
                     </div>
                 </div>
             </div>
