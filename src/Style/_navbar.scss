@@ -6,6 +6,14 @@
     width: 100%;
     justify-content: flex-start;
     color:$white;
+    transition: 0.5s;
+    
+    &.navbar-fixed{
+    background: $body-black;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    }
     
     .hnazmul-navbar-container {
         width: 100%;

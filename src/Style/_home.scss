@@ -35,7 +35,7 @@
            width: 100%;
            margin: auto;
            .header_slider-card{
-               height: 20px;
+               height: 104px;
                border-radius: 10px;
                h6{
                    font-size: 3vw;
@@ -73,10 +73,14 @@
                 p {
                     font-size: 20px;
                 }
-              @media screen and (max-width:992px) {
-                  position: static;
+                @media screen and (max-width:992px) {
+                    position: static;
+                    background-position: center;
               }
             }
+             @media screen and (max-width:992px) {
+                    background-position: center;
+              }
         }
     }
 

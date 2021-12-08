@@ -46,9 +46,9 @@ const SliderHeader = () => {
             <Navbar />
             <div className="slider-header-carousel row m-0 w-100">
                 <div className="carousel-side col-12 p-0 col-lg-12">
-                    <div className="slider-preview" style={{ backgroundImage: `url(${sliderPreviewData?.img})` }}>
+                    <div className="slider-preview d-flex d-md-block flex-column justify-content-center" style={{ backgroundImage: `url(${sliderPreviewData?.img})` }}>
                         <div className="mt-auto preview__text">
-                            <h1>{sliderPreviewData?.title}</h1>
+                            <h1 className="text-center text-md-start">{sliderPreviewData?.title}</h1>
                             <p className="col-12 col-sm-10 col-md-9 col-lg-7">{sliderPreviewData?.text}</p>
                             <button className="btn bg-red text-white btn-lg">Join now</button>
                         </div>
@@ -65,7 +65,7 @@ const SliderHeader = () => {
                                     },
                                 }}
                                 autoplay={{
-                                    delay:3000
+                                    delay:1000*60
                                 }}
                                 loop={true}
                                 className={"header-swiper"}>

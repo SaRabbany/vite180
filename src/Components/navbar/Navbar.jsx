@@ -1,16 +1,29 @@
 import { InlineIcon } from "@iconify/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink,Outlet } from "react-router-dom";
 import logo from "../../Images/Logo.png"
 import FAQ from './../../pages/Home/FAQ';
 
 const Navbar = () => {
     const [IsContentShow, setIsContentShow] = useState(false);
+    const [isFixed,setIsFixed] = useState(false)
+
+
+    useEffect(()=> {
+        window.addEventListener("scroll",function(e){
+            if(this.window.scrollY>=555){
+                setIsFixed(true)
+            }else{
+                setIsFixed(false)
+            }
+        })
+
+    },[])
 
     return (
         <>
             <div>
-                <nav className="hnazmul-navbar">
+                <nav className={`${isFixed?"navbar-fixed":""} hnazmul-navbar `}>
                     <div className="hnazmul-navbar-container container-xxl">
                         <div className="hnazmul-nav-brand">
                             <img style={{maxWidth:70}} src={logo} alt="" />
@@ -52,7 +65,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </nav>
-
+                {isFixed&& <div className="p-4 "><div className="p-3"></div></div>}
             </div>
         </>
     );
