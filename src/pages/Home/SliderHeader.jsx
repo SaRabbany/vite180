@@ -50,7 +50,7 @@ const SliderHeader = () => {
                         <div className="mt-auto preview__text">
                             <h1>{sliderPreviewData?.title}</h1>
                             <p className="col-12 col-sm-10 col-md-9 col-lg-7">{sliderPreviewData?.text}</p>
-                            <button className="btn bg-red text-white btn-lg">Join now for free</button>
+                            <button className="btn bg-red text-white btn-lg">Join now</button>
                         </div>
                         <div className="slider-area">
                             <Swiper

@@ -246,4 +246,13 @@
     }
 
 }
+ @media screen and (max-width:992px) {
+            .membership-small-card{
+                margin-top: 20px;
+            }
+        }
 
+#sliderHeader .slider-area .header_slider-card {
+   height: 150px;
+    border-radius: 10px;
+}

@@ -24,7 +24,7 @@ const Membership = () => {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className="ms-4">
+                        <div className="mx-3 ">
                                 <div className="card text-dark p-5 membership-small-card">
                                     <h2 className="text-center title">Year Membership</h2>
                                     <h3 className="text-center text-red price">£200 GBP.</h3>
